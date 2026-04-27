@@ -1,4 +1,4 @@
-# Inflation Forecasting Using ARIMA, XGBoost, and Random Forest
+# Inflation Forecasting Comparative Study
 
 A comparative forecasting project that studies how classical time-series modeling and machine-learning methods perform on inflation prediction.
 
