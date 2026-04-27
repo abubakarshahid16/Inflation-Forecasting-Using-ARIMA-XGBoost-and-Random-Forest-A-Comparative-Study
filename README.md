@@ -1,26 +1,32 @@
 # Inflation Forecasting Using ARIMA, XGBoost, and Random Forest
 
-A comparative forecasting project that evaluates classical time-series and machine-learning approaches for inflation prediction. The repository contrasts ARIMA, XGBoost, and Random Forest using supporting plots, performance summaries, and a documented R-based workflow.
+A comparative forecasting project that studies how classical time-series modeling and machine-learning methods perform on inflation prediction.
 
-## Overview
+This repository is best understood as an **economic forecasting comparison workflow** with supporting visual analysis, model outputs, and written documentation.
 
-This project studies inflation forecasting through a model-comparison lens. Instead of relying on a single method, it evaluates:
+## Problem this project solves
 
-- ARIMA for traditional time-series modeling
-- XGBoost for boosted tree-based forecasting
-- Random Forest for nonlinear ensemble prediction
+Inflation forecasting matters because it affects:
 
-The goal is to compare their predictive behavior and interpret which approach performs better under the dataset used in the study.
+- monetary-policy planning
+- financial analysis
+- budgeting assumptions
+- pricing and demand expectations
+- macroeconomic decision-making
 
-## Repository Contents
+No single model family is always best, so this project compares statistical and machine-learning approaches to understand how their behavior differs on the same problem.
 
-- `project_code.r`: main implementation
-- `project_documentation.pdf`: project report
-- `dataset (2).csv`: dataset used in the analysis
-- `model_comparison.csv`: summarized model results
-- supporting plots and diagnostics for performance, correlation, distributions, and feature importance
+## What this project does
 
-## Visual Highlights
+The repository compares:
+
+- ARIMA for classical time-series forecasting
+- XGBoost for boosted tree-based prediction
+- Random Forest for nonlinear ensemble forecasting
+
+The goal is not just to produce one forecast, but to evaluate which modeling style behaves better under the available dataset and evaluation setup.
+
+## Visual highlights
 
 | Model Comparison | ARIMA Performance |
 | --- | --- |
@@ -30,29 +36,33 @@ The goal is to compare their predictive behavior and interpret which approach pe
 | --- | --- |
 | ![Random Forest feature importance](rf_variable_importance.png) | ![XGBoost feature importance](xgb_feature_importance.png) |
 
-## Analysis Areas
+## Repository contents
 
-The repository includes evidence for:
+- `project_code.r`: main implementation
+- `project_documentation.pdf`: project report
+- `dataset (2).csv`: dataset used in the analysis
+- `model_comparison.csv`: summarized model results
+- supporting plots for correlation, error comparison, feature importance, and distributions
+
+## Analysis areas
 
 - model error comparison
+- inflation trend forecasting
 - correlation analysis
 - distribution and boxplot exploration
 - training and testing performance review
-- variable-importance interpretation for tree-based models
+- variable-importance interpretation for tree-based methods
 
-## Why This Project Matters
+## Why this project matters
 
-This is a useful portfolio project because it demonstrates:
+- It demonstrates economic forecasting with both classical and ML methods.
+- It compares models instead of assuming one method is best.
+- It provides evidence through plots and tabular outputs.
+- It is useful as a portfolio project for forecasting, analytics, and applied econometrics.
 
-- forecasting model comparison
-- combination of statistical and machine-learning methods
-- R-based analytical workflow
-- model interpretation through plots and importance metrics
-- evidence-backed evaluation instead of a single claimed best model
+## Run locally
 
-## Running the Project
-
-The main implementation is in:
+Open the main script:
 
 ```text
 project_code.r
@@ -65,11 +75,14 @@ Typical workflow:
 3. run preprocessing and model sections
 4. regenerate plots and comparison outputs
 
-## Current Repository Status
+## Industrial positioning
 
-This repository is best positioned as a comparative forecasting study and portfolio artifact rather than a deployed application. Its strength lies in the analytical workflow, model comparison, and documented outputs.
+In a more production-style setting, an inflation forecasting workflow would also need:
 
-## Author
+- regular data refresh pipelines
+- rolling backtests
+- forecast monitoring over time
+- feature-governance and data-quality checks
+- scenario analysis for policy or planning teams
 
-Abubakar Shahid  
-GitHub: <https://github.com/abubakarshahid16>
+This makes the repo best positioned as a **comparative macroeconomic forecasting study** with practical analytical value.
